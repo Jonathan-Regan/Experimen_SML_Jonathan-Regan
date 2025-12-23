@@ -6,6 +6,9 @@ on:
       - heart_raw/**
       - preprocessing/automate_Jonathan-Regan.py
 
+permissions:
+  contents: write
+
 jobs:
   preprocessing:
     runs-on: ubuntu-latest
