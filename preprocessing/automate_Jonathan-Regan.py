@@ -6,6 +6,8 @@ def preprocess_data(input_path: str, output_path: str):
     # 1. Load data
     df = pd.read_csv(input_path)
 
+    df = df.drop_duplicates()
+    
     # 2. Pisahkan fitur & target
     X = df.drop("target", axis=1)
     y = df["target"]
@@ -41,3 +43,4 @@ if __name__ == "__main__":
         "heart_raw/heart.csv",
         "preprocessing/heart_preprocessing/heart_preprocessed.csv"
     )
+
