@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - heart_raw/**
-      - preprocessing/automate_Jonathan.py
+      - preprocessing/automate_Jonathan-Regan.py
 
 jobs:
   preprocessing:
@@ -25,4 +25,5 @@ jobs:
 
     - name: Run preprocessing script
       run: |
-        python preprocessing/automate_Jonathan.py
+        python preprocessing/automate_Jonathan-Regan.py
+
